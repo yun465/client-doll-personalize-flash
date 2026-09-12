@@ -1,0 +1,21 @@
+# Customer and device-private data
+private_data/
+customers/*/private_data/
+*.wav
+*.m4a
+*.mp3
+*.aac
+*.pcm
+*.bin
+*.elf
+*.map
+*.nvs
+*.key
+*.pem
+*.secret
+
+# Build and local tool state
+build*/
+.venv/
+__pycache__/
+.DS_Store
