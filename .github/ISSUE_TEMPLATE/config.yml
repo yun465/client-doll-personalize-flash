@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Sensitive security report
+    url: https://github.com/yun465/client-doll-personalize-flash/security
+    about: Do not disclose customer data or vulnerability details in a public Issue.

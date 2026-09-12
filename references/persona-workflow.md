@@ -32,7 +32,7 @@ authorized_stage: 本轮授权边界
 
 ## 3. 生成候选
 
-优先复用母版命令：
+若目标项目存在参考配置中的分析器，优先复用母版命令：
 
 ```powershell
 python -m desktop_tool.ai_doll_tool.cli analyze-chat `
@@ -40,6 +40,8 @@ python -m desktop_tool.ai_doll_tool.cli analyze-chat `
   --owner "<exact-persona-speaker>" `
   --output "<private-output-directory>"
 ```
+
+若该命令或等价适配器不存在，不要临时实现未经验证的新分析器。可以在不打印聊天正文的前提下登记说话人标签和数量，但应在自动分析前停止，并按 [project-adaptation.md](project-adaptation.md)报告缺少的适配能力。
 
 候选必须经过敏感内容过滤和人工复核。不要因为高频就学习以下内容：
 

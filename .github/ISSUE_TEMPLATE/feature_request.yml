@@ -1,0 +1,44 @@
+name: Feature or adaptation request
+description: Propose a reusable workflow improvement or a new hardware/project adapter.
+title: "[Request]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: Describe the user need without customer-private material.
+    validations:
+      required: true
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - Reusable Skill behavior
+        - New firmware project adapter
+        - New ESP32-S3 hardware profile
+        - Documentation or example
+        - Validation tooling
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed outcome
+      description: Explain what success looks like and which authorization or privacy gates must remain unchanged.
+    validations:
+      required: true
+  - type: textarea
+    id: compatibility
+    attributes:
+      label: Compatibility details
+      description: List public hardware and toolchain information only. Do not include private paths, MAC addresses, credentials, audio, or customer firmware.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy confirmation
+      options:
+        - label: This request contains no customer-private data or secrets.
+          required: true
