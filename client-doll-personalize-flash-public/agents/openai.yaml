@@ -1,6 +1,0 @@
-interface:
-  display_name: "客户玩偶个性化烧录"
-  short_description: "根据客户聊天风格定制人格并构建、烧录 ESP32-S3 玩偶"
-  default_prompt: "Use $client-doll-personalize-flash to identify the customer speaker in my chat record, follow my desired reply style, prepare an approved persona, and then build or flash the client doll firmware."
-policy:
-  allow_implicit_invocation: true
